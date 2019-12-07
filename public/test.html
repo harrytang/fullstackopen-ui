@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>Section</title>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .content-divider {
+            height:0.5rem;
+            background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+        }
+        .skills{
+            /*min-height: 100vh;*/
+            background-color: #3a3e3b;
+        }
+        .icon{
+            font-size: 2.2rem;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+
+        }
+        .single-skill{
+            text-align: center;
+            padding: 1.5rem 0;
+            /*margin: 1.5rem 0;*/
+        }
+        .single-skill h3{
+            font-family: sans-serif;
+            font-size: 1.5rem;
+            color: #698f3f;
+            text-transform: uppercase;
+            letter-spacing: 0.5rem;
+            /*margin-bottom: 2rem;*/
+            margin-bottom: 1.5rem;
+        }
+
+        .single-skill p{
+            max-width: 300px;
+            margin: 0 auto;
+            line-height: 1.5;
+            font-size: 1.2rem;
+        }
+
+        .clearfix::before,.clearfix::after{
+            content:"";
+            clear: both;
+            display: table;
+        }
+
+        .single-skill:hover .icon{
+            transform: translateY(-10px);
+            font-size: 2.4rem;
+        }
+
+        .single-skill:hover {
+            background: #e5e5e5;
+        }
+
+        .single-skill:hover h3{
+            color: grey;
+        }
+
+        @media screen and (min-width: 576px){
+            .single-skill {
+                float: left;
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+        /*    @media screen and (min-width: 1120px){*/
+        /*        .single-skill{*/
+        /*            width:25%;*/
+        /*        }*/
+        /*    }*/
+
+
+    </style>
+</head>
+<body>
+<div class="content-divider">
+</div>
+<section class="skills clearfix">
+    <article class="single-skill">
+        <span class="icon"><i class="fas fa-bomb"></i></span>
+        <h3>energetic</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eius exercitationem id iusto necessitatibus neque?</p>
+    </article>
+
+    <article class="single-skill">
+        <span class="icon"><i class="fas fa-glass-cheers"></i></span>
+        <h3>relaxation</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At debitis deleniti dicta distinctio enim numquam.</p>
+    </article>
+
+    <article class="single-skill">
+        <span class="icon"><i class="fas fa-mortar-pestle"></i></span>
+        <h3>family recipes</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque harum maiores provident similique sint, voluptates?</p>
+    </article>
+
+    <article class="single-skill">
+        <span class="icon"><i class="fas fa-gamepad"></i></span>
+        <h3>entertainment</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa deserunt eius esse ex iusto laboriosam molestias quae quidem velit!</p>
+    </article>
+</section>
+<section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut cupiditate eligendi explicabo labore maiores modi, perferendis quia quo repellendus. Beatae eius facilis similique sunt.</p>
+</section>
+
+</body>
+</html>
